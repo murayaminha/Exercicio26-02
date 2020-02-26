@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Medicamentos controlados</title>
+</head>
+
+<body>
+    <header class="navbar bg-dark text-light">
+        <h1> Formulário para medicamentos controlados RD</h1>
+    </header>
+    <main class="container">
+        <form class="row text-center">
+            <div class="col-md-6 form-group">
+                <label for="CRM">
+                    CRM do Médico
+                </label for="CRM">
+                <input class="form-control" type="number" placeholder="CRM do médico" name="CRM" id="CRM">
+                <label for="nomeMedico"> Nome do médico</label>
+                <input class="form-control" type="text" placeholder="Nome do médico" name="nomeMedico" id="nomeMedico">
+                <label for="dataEmissao">
+                    Data da receita
+                </label>
+                <input type="date" class="form-control" name="dataEmissao" id="dataEmissao">
+                <label for="quantidade">
+                    Quantidade de caixas
+                </label>
+                <input type="number" class="form-control" min="0" name="quantidade" id="quantidade">
+            </div>
+            <div class="col-md-6 form-group">
+                <label for="nomePaciente">
+
+                    Nome do Paciente
+                </label>
+                <input type="text" class="form-control" name="nomePaciente" placeholder="Nome do Paciente"
+                    id="nomePaciente">
+                <label for="CPF">CPF</label>
+                <input class="form-control" type="text" name="CPF" id="CPF" maxlength="11"
+                    placeholder="Digite somente numeros">
+                <label for="dataNascimento">Data de nascimeto</label>
+                <input class="form-control" type="date" name="dataNascimento" id="dataNascimento">
+                <label for="sexo">Sexo do paciente</label>
+                <select class="form-control" name="sexo" id="sexo">
+                    <option value="m">Masculino</option>
+
+                    <option value="f">Feminino</option>
+                </select>
+
+
+            </div>
+            <div class="text-center col-md-12">
+                <label for="envio">Tipo de envio</label>
+                <select class="form-control" name="envio" id="envio">
+                    <option value="" selected disabled>Selecione o tipo de envio</option>
+                    <option value="Whats">whatsapp</option>
+
+                    <option value="anexo">anexo</option>
+                    <option value="anexo">e-mail</option>
+
+                </select>
+            </div>
+        </form>
+    </main>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+        <script src="script1.js"></script> 
+</body>
+
+</html>

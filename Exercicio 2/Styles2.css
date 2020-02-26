@@ -1,0 +1,24 @@
+body{
+    background-color: #f0f0f0;
+}
+.menu{
+background-color: #475266;
+width: 10vw;
+display: block;
+padding: 1rem;
+align-content: flex-start;
+}
+div{
+    margin-top: 5px;
+}
+main{
+    display: flex;
+}
+.user{
+    align-content: flex-end;
+    display: flex;
+}
+a{
+    text-decoration: none;
+    color: black
+}
